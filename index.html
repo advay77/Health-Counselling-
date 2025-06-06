@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConsult - Your Gateway to Top Medical Colleges | NEET Counselling & MBBS Abroad</title>
+    <meta name="description" content="Expert NEET UG/PG counselling, college predictions, MBBS abroad guidance. Get trusted admission support from medical education consultants.">
+    <meta name="keywords" content="NEET counselling, MBBS abroad, medical college admission, NEET cutoff, medical career guidance">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MedConsult</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Gateway to Top Medical Colleges</h1>
+                <p class="hero-subtitle">Get trusted counselling, cut-off predictions & admission support from NEET experts</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('enquiry')">Book Free Counselling</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('services')">Check Cutoffs</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Medical students and doctor consultation" loading="lazy">
+                <div class="hero-image-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>NEET Experts</h3>
+                    <p>Experienced counsellors with deep knowledge of medical entrance exams</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>1000+ Students Guided</h3>
+                    <p>Successfully helped over 1000 students secure medical college admissions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>MBBS Abroad Support</h3>
+                    <p>Complete guidance for international medical education opportunities</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>College Predictions</h3>
+                    <p>Accurate college and branch predictions based on your NEET score</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="neet-counselling">
+                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f393.svg" alt="NEET" class="tab-icon"> NEET Counselling
+                    </button>
+                    <button class="tab-btn" data-tab="mbbs-abroad">
+                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f30e.svg" alt="Abroad" class="tab-icon"> MBBS Abroad
+                    </button>
+                    <button class="tab-btn" data-tab="career-roadmap">
+                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4c8.svg" alt="Career" class="tab-icon"> Career Roadmap
+                    </button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="neet-counselling">
+                        <div class="service-content">
+                            <h3>NEET UG/PG Counselling</h3>
+                            <p>Comprehensive counselling for NEET UG and PG aspirants including choice filling, document verification, and seat allotment guidance.</p>
+                            <ul>
+                                <li>Choice filling strategy</li>
+                                <li>Document verification support</li>
+                                <li>Seat allotment guidance</li>
+                                <li>State quota counselling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="mbbs-abroad">
+                        <div class="service-content">
+                            <h3>MBBS & Allied Courses Abroad Guidance</h3>
+                            <p>We provide comprehensive support for pursuing medical and allied health courses abroad, including:</p>
+                            <ul>
+                                <li><strong>MBBS/MD:</strong> Study medicine in top universities in Russia, Ukraine, Philippines, Georgia, Kazakhstan, and more.</li>
+                                <li><strong>Ayurveda:</strong> Explore BAMS programs in Nepal, Sri Lanka, and select international institutions.</li>
+                                <li><strong>Homeopathy:</strong> BHMS and related courses in countries with recognized homeopathic education.</li>
+                                <li><strong>Other Allied Health:</strong> BDS, Nursing, Pharmacy, Physiotherapy, and more in reputed global colleges.</li>
+                            </ul>
+                            <p>Our services include university selection, admission process, document verification, visa assistance, and pre-departure guidance for each course and country.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="career-roadmap">
+                        <div class="service-content">
+                            <h3>Career Roadmap</h3>
+                            <p>Personalized career planning and guidance to help you make informed decisions about your medical career path.</p>
+                            <ul>
+                                <li>Career assessment</li>
+                                <li>Specialization guidance</li>
+                                <li>Future opportunities</li>
+                                <li>Industry insights</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="neet-company">
+                        <div class="service-content">
+                            <h3>NEET UG Company & Counselling Support</h3>
+                            <p>We expertly handle NEET UG counselling for both All India Quota (AIQ) and state-level seats:</p>
+                            <ul>
+                                <li><strong>All India (MCC) Counselling:</strong> Guidance for 15% AIQ, Deemed Universities, Central Universities, and ESIC/AFMC seats.</li>
+                                <li><strong>State Counselling:</strong> Personalized support for state quota seats in states like Maharashtra, Karnataka, Tamil Nadu, Andhra Pradesh, and more.</li>
+                                <li><strong>Choice Filling & Locking:</strong> Strategic advice to maximize your chances based on your NEET score and preferences.</li>
+                                <li><strong>Document Verification:</strong> Step-by-step help with all required documents for both national and state processes.</li>
+                                <li><strong>Updates & Alerts:</strong> Timely notifications about important dates, cutoffs, and seat allotment results.</li>
+                            </ul>
+                            <p>Our experienced team ensures you never miss a deadline and get the best possible seat as per your eligibility and aspirations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Form -->
+    <section id="enquiry" class="enquiry-form">
+        <div class="container">
+            <h2 class="section-title">Get Free Counselling</h2>
+            <div class="form-container enquiry-form-flex">
+                <div class="enquiry-visual">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Consultant" loading="lazy">
+                </div>
+                <form id="enquiryForm" class="enquiry-form-content">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="studentName">Student Name *</label>
+                            <input type="text" id="studentName" name="studentName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course Interest *</label>
+                            <select id="course" name="course" required>
+                                <option value="">Select Course</option>
+                                <option value="MBBS">MBBS</option>
+                                <option value="BDS">BDS</option>
+                                <option value="AYUSH">AYUSH</option>
+                                <option value="MBBS Abroad">MBBS Abroad</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="neetScore">NEET Score</label>
+                            <input type="number" id="neetScore" name="neetScore" placeholder="Enter your NEET score">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State *</label>
+                            <select id="state" name="state" required>
+                                <option value="">Select State</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span class="btn-text">Submit Enquiry</span>
+                        <span class="btn-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Submitting...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What makes MedConsult different from other counselling services?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        MedConsult offers personalized, end-to-end guidance for NEET, MBBS abroad, and allied health admissions. Our expert team provides transparent, student-first support at every step, from form filling to college selection and visa assistance.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How does MedConsult help with state and All India NEET counselling?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We guide you through both All India (MCC) and state-level counselling, including registration, document verification, choice filling, and seat allotment. Our team ensures you never miss a deadline and maximize your chances for the best seat.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can MedConsult assist with MBBS and allied health admissions abroad?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes! We help you select the right country and university, prepare documents, and guide you through the admission and visa process for MBBS, BDS, Ayurveda, Homeopathy, and more.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is the counselling process at MedConsult transparent and ethical?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Absolutely. We maintain complete transparency in our process, fees, and communication. Our only goal is your success and satisfaction.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How do I get started with MedConsult?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Simply fill out our enquiry form or contact us directly. Our counsellors will reach out for a free, personalized session to understand your needs and start your journey.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us - Card Section -->
+    <section id="why-choose-us-cards" class="why-choose-us-cards-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="why-cards-grid">
+                <div class="why-card">
+                    <div class="why-card-inner">
+                        <div class="why-card-front">
+                            <i class="fas fa-user-tie why-card-icon"></i>
+                            <h4>Experienced Counsellors</h4>
+                        </div>
+                        <div class="why-card-back">
+                            <p>Our team consists of seasoned professionals with years of experience in NEET, MBBS abroad, and allied health admissions. We provide expert guidance at every step.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-card-inner">
+                        <div class="why-card-front">
+                            <i class="fas fa-user-check why-card-icon"></i>
+                            <h4>Personalized Guidance</h4>
+                        </div>
+                        <div class="why-card-back">
+                            <p>We tailor our counselling to your academic background, preferences, and career goals, ensuring you get the best-fit options for your future.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-card-inner">
+                        <div class="why-card-front">
+                            <i class="fas fa-hands-helping why-card-icon"></i>
+                            <h4>End-to-End Support</h4>
+                        </div>
+                        <div class="why-card-back">
+                            <p>From form filling and document verification to college selection, visa assistance, and post-admission support, we are with you at every stage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-card-inner">
+                        <div class="why-card-front">
+                            <i class="fas fa-award why-card-icon"></i>
+                            <h4>Proven Track Record</h4>
+                        </div>
+                        <div class="why-card-back">
+                            <p>Over 1000 students have successfully secured admissions in top medical colleges in India and abroad through our guidance and support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-team-img">
+                        <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=400&q=80" alt="Our Team" loading="lazy">
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Medical Plaza, Education District<br>New Delhi, India - 110001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@medconsult.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.674994892286!2d77.23090731508236!3d28.65195908240063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1635789012345!5m2!1sen!2sin"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MedConsult</h3>
+                    <p>Your trusted partner for medical education and career guidance.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">NEET Counselling</a></li>
+                        <li><a href="#services">MBBS Abroad</a></li>
+                        <li><a href="#services">Career Guidance</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MedConsult. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <i class="fas fa-check-circle success-icon"></i>
+                <h3>Thank You!</h3>
+                <p>Your enquiry has been submitted successfully. We'll get back to you within 24 hours.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
