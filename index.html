@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premier medical consultancy services for NEET UG/PG counselling, NRI quota admissions, and management quota admissions.">
+    <title>MediConsult - Medical Education Consultancy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <h1>MediConsult</h1>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#colleges">Colleges</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact" class="btn-primary">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Notification Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker-item">NEET UG 2024 Counselling Schedule Released!</div>
+            <div class="ticker-item">NEET PG 2024 Results Announced - Counselling Starts Soon</div>
+            <div class="ticker-item">Last Date for NRI Quota Applications: August 30, 2024</div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Path to Medical Excellence Starts Here</h1>
+                <p> Paving the Path to Medical Dreams. Expert Guidance for Medical Admissions.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Get Free Consultation</a>
+                    <a href="#services" class="btn-secondary">Explore Services</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="image1.png" alt="Medical students with doctor" class="fade-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h2>1000+</h2>
+                <p>Successful Admissions</p>
+            </div>
+            <div class="stat-item">
+                <h2>98%</h2>
+                <p>Success Rate</p>
+            </div>
+            <div class="stat-item">
+                <h2>200+</h2>
+                <p>Partner Colleges</p>
+            </div>
+            <div class="stat-item">
+                <h2>15+</h2>
+                <p>Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive medical education consultancy services</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>NEET UG/PG Counselling</h3>
+                    <p>Expert guidance through the complex NEET counselling process to secure your desired medical college seat.</p>
+                    <a href="#contact" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>NRI Quota Admission</h3>
+                    <p>Specialized assistance for NRI students seeking admission to top medical colleges across India.</p>
+                    <a href="#contact" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Management Quota Admissions</h3>
+                    <p>Secure admission through management quota in prestigious private medical colleges.</p>
+                    <a href="#contact" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>College Prediction</h3>
+                    <p>Accurate college predictions based on your NEET score, category, and preferences.</p>
+                    <a href="#contact" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colleges Section -->
+    <section id="colleges" class="colleges fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>Medical Colleges</h2>
+                <p>Find the perfect medical college that matches your preferences</p>
+            </div>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="course-filter">Course:</label>
+                    <select id="course-filter">
+                        <option value="all">All Courses</option>
+                        <option value="mbbs">MBBS</option>
+                        <option value="bds">BDS</option>
+                        <option value="md">MD/MS</option>
+                        <option value="mds">MDS</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="state-filter">State:</label>
+                    <select id="state-filter">
+                        <option value="all">All States</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="tamilnadu">Tamil Nadu</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="up">Uttar Pradesh</option>
+                        <option value="westbengal">West Bengal</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="andhrapradesh">Andhra Pradesh</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="jharkhand">Jharkhand</option>
+                        <option value="chhattisgarh">Chhattisgarh</option>
+                        <option value="assam">Assam</option>
+                        <option value="uttarakhand">Uttarakhand</option>
+                        <option value="himachalpradesh">Himachal Pradesh</option>
+                        <option value="jammuandkashmir">Jammu & Kashmir</option>
+                        <option value="goa">Goa</option>
+                        <option value="arunachalpradesh">Arunachal Pradesh</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="fee-filter">Fee Range:</label>
+                    <select id="fee-filter">
+                        <option value="all">All Ranges</option>
+                        <option value="low">Below 10 Lakhs</option>
+                        <option value="medium">10-20 Lakhs</option>
+                        <option value="high">Above 20 Lakhs</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="type-filter">Type:</label>
+                    <select id="type-filter">
+                        <option value="all">All Types</option>
+                        <option value="government">Government</option>
+                        <option value="private">Private</option>
+                    </select>
+                </div>
+            </div>
+            <div class="colleges-grid" id="colleges-grid">
+                <!-- College cards will be dynamically inserted here -->
+            </div>
+            <div class="load-more">
+                <button id="load-more-btn" class="btn-secondary">Load More Colleges</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>Medical Courses</h2>
+                <p>Explore various medical courses and their details</p>
+            </div>
+            <div class="tabs">
+                <div class="tab-header">
+                    <div class="tab-btn active" data-tab="mbbs">MBBS</div>
+                    <div class="tab-btn" data-tab="bds">BDS</div>
+                    <div class="tab-btn" data-tab="md-ms">MD/MS</div>
+                    <div class="tab-btn" data-tab="mds">MDS</div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="mbbs">
+                        <div class="course-info">
+                            <div class="course-image">
+                                <img src="/placeholder.svg?height=300&width=400" alt="MBBS Course">
+                            </div>
+                            <div class="course-details">
+                                <h3>Bachelor of Medicine and Bachelor of Surgery (MBBS)</h3>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> Duration: 5.5 Years</span>
+                                    <span><i class="fas fa-graduation-cap"></i> Eligibility: NEET UG Qualified</span>
+                                    <span><i class="fas fa-rupee-sign"></i> Fees: ₹5-25 Lakhs (varies by college)</span>
+                                </div>
+                                <p>MBBS is an undergraduate medical degree program that provides students with theoretical knowledge and clinical skills required to become a medical practitioner. The program includes classroom learning, laboratory work, and clinical rotations.</p>
+                                <h4>Career Prospects:</h4>
+                                <ul>
+                                    <li>Clinical Practice</li>
+                                    <li>Hospital Residency</li>
+                                    <li>Medical Research</li>
+                                    <li>Public Health Services</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary">Get Admission Guidance</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="bds">
+                        <div class="course-info">
+                            <div class="course-image">
+                                <img src="/placeholder.svg?height=300&width=400" alt="BDS Course">
+                            </div>
+                            <div class="course-details">
+                                <h3>Bachelor of Dental Surgery (BDS)</h3>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> Duration: 5 Years</span>
+                                    <span><i class="fas fa-graduation-cap"></i> Eligibility: NEET UG Qualified</span>
+                                    <span><i class="fas fa-rupee-sign"></i> Fees: ₹4-20 Lakhs (varies by college)</span>
+                                </div>
+                                <p>BDS is an undergraduate dental program that trains students in diagnosing, preventing, and treating dental and oral diseases. The curriculum includes theoretical knowledge, practical training, and clinical experience.</p>
+                                <h4>Career Prospects:</h4>
+                                <ul>
+                                    <li>Private Dental Practice</li>
+                                    <li>Dental Hospitals</li>
+                                    <li>Academic Institutions</li>
+                                    <li>Research Organizations</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary">Get Admission Guidance</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="md-ms">
+                        <div class="course-info">
+                            <div class="course-image">
+                                <img src="/placeholder.svg?height=300&width=400" alt="MD/MS Course">
+                            </div>
+                            <div class="course-details">
+                                <h3>Doctor of Medicine (MD) / Master of Surgery (MS)</h3>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> Duration: 3 Years</span>
+                                    <span><i class="fas fa-graduation-cap"></i> Eligibility: NEET PG Qualified</span>
+                                    <span><i class="fas fa-rupee-sign"></i> Fees: ₹8-50 Lakhs (varies by college)</span>
+                                </div>
+                                <p>MD/MS are postgraduate medical degrees that provide specialized training in various medical disciplines. MD focuses on non-surgical specialties, while MS focuses on surgical specialties.</p>
+                                <h4>Career Prospects:</h4>
+                                <ul>
+                                    <li>Specialized Medical Practice</li>
+                                    <li>Super Specialization (DM/MCh)</li>
+                                    <li>Academic Positions</li>
+                                    <li>Hospital Administration</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary">Get Admission Guidance</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="mds">
+                        <div class="course-info">
+                            <div class="course-image">
+                                <img src="/placeholder.svg?height=300&width=400" alt="MDS Course">
+                            </div>
+                            <div class="course-details">
+                                <h3>Master of Dental Surgery (MDS)</h3>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> Duration: 3 Years</span>
+                                    <span><i class="fas fa-graduation-cap"></i> Eligibility: NEET PG Qualified</span>
+                                    <span><i class="fas fa-rupee-sign"></i> Fees: ₹7-40 Lakhs (varies by college)</span>
+                                </div>
+                                <p>MDS is a postgraduate dental degree that offers specialized training in various dental disciplines such as Orthodontics, Periodontics, Prosthodontics, Oral Surgery, and more.</p>
+                                <h4>Career Prospects:</h4>
+                                <ul>
+                                    <li>Specialized Dental Practice</li>
+                                    <li>Academic Positions</li>
+                                    <li>Dental Research</li>
+                                    <li>Dental Hospital Administration</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary">Get Admission Guidance</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Students Say</h2>
+                <p>Success stories from students who achieved their medical education goals with us</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Thanks to MediConsult, I secured admission to my dream medical college. Their counselling services were exceptional and personalized to my needs."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Rahul Sharma">
+                            <div>
+                                <h4>Rahul Sharma</h4>
+                                <p>MBBS Student, AIIMS Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The team at MediConsult provided invaluable guidance throughout the NEET counselling process. Their expertise helped me make informed decisions about my medical career."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Priya Patel">
+                            <div>
+                                <h4>Priya Patel</h4>
+                                <p>BDS Student, Govt. Dental College, Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"As an NRI student, I was confused about the admission process. MediConsult simplified everything and helped me secure a seat in a top medical college in India."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Arjun Menon">
+                            <div>
+                                <h4>Arjun Menon</h4>
+                                <p>MBBS Student, KMC Manipal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button id="prev-testimonial" class="testimonial-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-testimonial" class="testimonial-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Your trusted partner in medical education counselling</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <img src="contact.png" alt="MediConsult Team" class="fade-img">
+                </div>
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>MediConsult is a premier medical education consultancy with over 15 years of experience in guiding aspiring medical professionals. Our team consists of experienced medical educators, counsellors, and industry experts who are passionate about helping students achieve their dreams.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To provide honest, transparent, and effective guidance to students seeking quality medical education, ensuring they make informed decisions about their career path.</p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To be the most trusted name in medical education consultancy, known for integrity, expertise, and student success.</p>
+                    
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li>Personalized counselling tailored to individual needs</li>
+                        <li>Expertise in NEET UG/PG counselling and NRI quota admissions</li>
+                        <li>Comprehensive support from application to admission</li>
+                        <li>Strong network with top medical colleges across India</li>
+                        <li>Proven track record of successful admissions</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about medical admissions</p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What is NEET counselling?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>NEET counselling is the process through which qualified candidates are allocated seats in medical and dental colleges based on their NEET scores, preferences, and available seats. It involves registration, choice filling, seat allotment, and reporting to the allotted institution.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How can I get admission through NRI quota?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>NRI quota admissions require you to be an NRI, child of NRI, or sponsored by an NRI relative. You need to qualify NEET with the minimum required percentile, submit necessary documents proving NRI status, and apply to colleges offering NRI quota seats. Our consultants can guide you through the specific requirements and process.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What is the difference between AIQ and State Quota?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>All India Quota (AIQ) reserves 15% of seats in government medical colleges (except in J&K) for candidates from across India. State Quota comprises 85% of seats in government colleges, which are filled by respective state counselling authorities for candidates who belong to that state. Different states have different domicile criteria.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How much does MBBS cost in India?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>The cost of MBBS in India varies widely. Government college fees range from ₹20,000 to ₹1 lakh per year. Private college fees range from ₹5 lakhs to ₹25 lakhs per year. Deemed universities can charge between ₹15-30 lakhs per year. NRI quota seats typically cost between ₹15-35 lakhs per year.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What services does MediConsult provide?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>MediConsult provides comprehensive services including NEET UG/PG counselling guidance, college predictions based on NEET scores, assistance with NRI and management quota admissions, document verification, interview preparation, and personalized counselling for medical career planning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch for personalized medical admission guidance</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>123 Medical Avenue, Bangalore, Karnataka - 560001</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>info@mediconsult.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                            <p>Sunday: 10:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="inquiry-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="neet-score">NEET Score (if applicable)</label>
+                            <input type="number" id="neet-score" name="neet-score">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Submit Inquiry</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>MediConsult</h2>
+                    <p>Your trusted partner in medical education</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#colleges">Colleges</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">NEET UG/PG Counselling</a></li>
+                        <li><a href="#services">NRI Quota Admissions</a></li>
+                        <li><a href="#services">Management Quota</a></li>
+                        <li><a href="#services">College Predictions</a></li>
+                        <li><a href="#services">Career Counselling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates on medical admissions</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediConsult. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script>
+// Fade-in on scroll for sections
+function fadeInOnScroll() {
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const trigger = window.innerHeight * 0.92;
+  fadeEls.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < trigger) {
+      section.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', fadeInOnScroll);
+window.addEventListener('DOMContentLoaded', fadeInOnScroll);
+</script>
+</body>
+</html>
