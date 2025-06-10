@@ -129,83 +129,9 @@ document.addEventListener("DOMContentLoaded", () => {
     testimonialTrack.style.transform = `translateX(-${currentSlide * 100}%)`
   }
 
-  // Contact Form Submission
-  const contactForm = document.getElementById("inquiry-form")
-  const formStatus = document.getElementById("form-status")
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault()
 
-      // Get form data
-      const formData = new FormData(contactForm)
-      const data = {}
-      formData.forEach((value, key) => {
-        data[key] = value
-      })
 
-      // Show loading state
-      formStatus.textContent = "Sending your inquiry..."
-      formStatus.className = "form-status"
-      formStatus.style.display = "block"
-
-      // Send form data to server
-      fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      })
-        .then((response) => response.json())
-        .then((result) => {
-          if (result.success) {
-            formStatus.textContent =
-              "Thank you! Your inquiry has been submitted successfully. We will contact you shortly."
-            formStatus.className = "form-status success"
-            contactForm.reset()
-          } else {
-            throw new Error(result.message || "Something went wrong")
-          }
-        })
-        .catch((error) => {
-          formStatus.textContent = error.message || "Failed to submit your inquiry. Please try again later."
-          formStatus.className = "form-status error"
-        })
-    })
-  }
-
-  // Newsletter Form Submission
-  const newsletterForm = document.getElementById("newsletter-form")
-
-  if (newsletterForm) {
-    newsletterForm.addEventListener("submit", function (e) {
-      e.preventDefault()
-
-      const email = this.querySelector('input[type="email"]').value
-
-      // Send newsletter subscription request
-      fetch("/api/newsletter", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      })
-        .then((response) => response.json())
-        .then((result) => {
-          if (result.success) {
-            alert("Thank you for subscribing to our newsletter!")
-            newsletterForm.reset()
-          } else {
-            throw new Error(result.message || "Something went wrong")
-          }
-        })
-        .catch((error) => {
-          alert(error.message || "Failed to subscribe. Please try again later.")
-        })
-    })
-  }
 })
 
 document.addEventListener("DOMContentLoaded", () => {
