@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courses: ["mbbs", "md", "ms"],
       fees: "low",
       rating: 4.9,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq4COmvB4sz3CEqGkrS3sMDtnMic43m32lmg&s",
       description: "Premier medical institution in India known for excellence in medical education and research.",
     },
     {
@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courses: ["mbbs", "md", "ms"],
       fees: "medium",
       rating: 4.8,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://upload.wikimedia.org/wikipedia/commons/3/3b/CMCH_Vellore.JPG",
       description: "One of the top medical colleges known for quality education and patient care.",
     },
     {
@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courses: ["mbbs", "bds", "md", "ms", "mds"],
       fees: "low",
       rating: 4.7,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSVyWNgImddpQnCr-yZB4nbTJ5Bgw7rI1Lmw&s",
       description: "Historic medical institution offering a wide range of medical courses.",
     },
     {
@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courses: ["mbbs", "md", "ms"],
       fees: "high",
       rating: 4.6,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSywy15T2MmyedPZ4bqsKyUtEHBn3q6t3aKlw&s",
       description: "Leading private medical college with state-of-the-art facilities.",
     },
     {
@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courses: ["mbbs", "md", "ms"],
       fees: "low",
       rating: 4.5,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9XlbCiaA8irimB6p39PKu9ENEe9XWY_2R_Q&s",
       description: "One of the oldest medical colleges in India with a rich heritage.",
     },
     {
@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courses: ["mbbs", "md", "ms"],
       fees: "medium",
       rating: 4.5,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://i.ytimg.com/vi/xLuV0cPEPy4/sddefault.jpg?v=61192c04",
       description: "Christian minority institution known for holistic medical education.",
     },
     {
@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courses: ["mbbs", "md", "ms"],
       fees: "low",
       rating: 4.6,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlzxbm17hrvjmP64uBzzf2JnaGSm8CsKVaQ&s",
       description: "Premier medical college in the heart of Delhi with excellent clinical exposure.",
     },
     {
@@ -304,7 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courses: ["mbbs", "md", "ms"],
       fees: "high",
       rating: 4.3,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6RQNtDGTd0IFNiDGuFkRHlMTVHy35eM0Rw&s",
       description: "Well-established medical college with modern infrastructure.",
     },
     {
@@ -316,7 +316,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courses: ["mbbs", "md", "ms"],
       fees: "low",
       rating: 4.4,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpMwG5wZxBan014l_FGvG3Nrmr3ViY_zuyWg&s",
       description: "Prestigious government medical college with excellent faculty.",
     },
   ]

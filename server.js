@@ -13,11 +13,11 @@ const PORT = process.env.PORT || 3000
 // Middleware
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.static(path.join(__dirname, "public")))
+app.use(express.static(__dirname))
 
 // Routes
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"))
+  res.sendFile(path.join(__dirname, "index.html"))
 })
 
 // Contact form API endpoint
@@ -37,15 +37,15 @@ app.post("/api/contact", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD,
+        user: 'your-email@gmail.com',
+        pass: 'your-email-password',
       },
     })
 
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: process.env.RECIPIENT_EMAIL || process.env.EMAIL_USER,
+      to: 'advayanand87@gmail.com',
       subject: "New Inquiry from Medical Consultancy Website",
       html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 5px;">
@@ -149,4 +149,10 @@ app.post("/api/newsletter", async (req, res) => {
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
+})
+
+// Global error handler
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).json({ success: false, message: 'Internal server error.' })
 })
