@@ -113,13 +113,72 @@ img.fade-img:hover {
 }
 
 /* Card pop effect */
-.service-card,
+.service-card {
+  perspective: 1000px;
+  height: 350px; /* Adjusted height to accommodate text */
+}
+
+.service-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.service-card:hover .service-card-inner {
+  transform: rotateY(180deg);
+}
+
+.service-card-front, .service-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.service-card-back {
+  transform: rotateY(180deg);
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.service-card-back h3 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.service-card-back p {
+  color: var(--light-gray);
+  margin-bottom: 20px;
+}
+
+.service-card-back .read-more {
+  color: var(--accent-color);
+}
+
+.service-card-back .read-more:hover {
+  color: var(--accent-color-2);
+}
+
+/* Existing card pop effect for other cards */
 .college-card,
 .testimonial-card {
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.service-card:hover,
 .college-card:hover,
 .testimonial-card:hover {
   transform: translateY(-10px) scale(1.03);
