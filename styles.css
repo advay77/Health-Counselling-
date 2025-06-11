@@ -185,6 +185,34 @@ img.fade-img:hover {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.13);
 }
 
+/* Table styles for FAQ section */
+.accordion-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.accordion-content th,
+.accordion-content td {
+    border: 1px solid var(--medium-gray);
+    padding: 10px;
+    text-align: left;
+}
+
+.accordion-content th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.accordion-content tr:nth-child(even) {
+    background-color: var(--light-gray);
+}
+
+.accordion-content tr:hover {
+    background-color: var(--medium-gray);
+}
+
 /* Soft gradient background for hero and about */
 .hero,
 .about {
