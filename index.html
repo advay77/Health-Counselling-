@@ -47,6 +47,8 @@
         </div>
     </div>
 
+
+
     <!-- Hero Section -->
     <section id="home" class="hero fade-in">
         <div class="container">
@@ -163,6 +165,121 @@
     </section>
 
 
+    <body>
+        <h1 class="heading">Browse Popular Medical PG Courses</h1>
+        <div class="card-container">
+          
+          <div class="card">
+            <div class="hover-bg"></div>
+            <div class="card-content">
+              <h2>MD Anesthesia</h2>
+              <button onclick="toggleDetails(this)">Details</button>
+              <div class="extra-details">
+                <p>Focuses on patient sedation and pain management during surgical procedures.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="hover-bg"></div>
+            <div class="card-content">
+              <h2>MD Dermatology</h2>
+              <button onclick="toggleDetails(this)">Details</button>
+              <div class="extra-details">
+                <p>Deals with skin disorders, cosmetic skin treatments, and dermatopathology.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="hover-bg"></div>
+            <div class="card-content">
+              <h2>MD Radiology</h2>
+              <button onclick="toggleDetails(this)">Details</button>
+              <div class="extra-details">
+                <p>Specializes in medical imaging techniques like MRI, CT, ultrasound, and X-rays.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="hover-bg"></div>
+            <div class="card-content">
+              <h2>MD General Medicine</h2>
+              <button onclick="toggleDetails(this)">Details</button>
+              <div class="extra-details">
+                <p>Covers diagnosis and non-surgical treatment of internal diseases in adults.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="hover-bg"></div>
+            <div class="card-content">
+              <h2>MD Paediatrics</h2>
+              <button onclick="toggleDetails(this)">Details</button>
+              <div class="extra-details">
+                <p>Focuses on medical care of infants, children, and adolescents.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="hover-bg"></div>
+            <div class="card-content">
+              <h2>MS Orthopaedics</h2>
+              <button onclick="toggleDetails(this)">Details</button>
+              <div class="extra-details">
+                <p>Involves surgical treatment of bones, joints, and musculoskeletal system.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="hover-bg"></div>
+            <div class="card-content">
+              <h2>MS Obstetrics & Gynaecology</h2>
+              <button onclick="toggleDetails(this)">Details</button>
+              <div class="extra-details">
+                <p>Deals with pregnancy, childbirth, and disorders of the reproductive system.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="hover-bg"></div>
+            <div class="card-content">
+              <h2>MS Ophthalmology</h2>
+              <button onclick="toggleDetails(this)">Details</button>
+              <div class="extra-details">
+                <p>Specializes in eye and vision care, including surgeries and treatments.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="hover-bg"></div>
+            <div class="card-content">
+              <h2>MD Pulmonary / Respiratory Medicine</h2>
+              <button onclick="toggleDetails(this)">Details</button>
+              <div class="extra-details">
+                <p>Focuses on diseases of the lungs and respiratory tract including asthma, COPD.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="hover-bg"></div>
+            <div class="card-content">
+              <h2>MS General Surgery</h2>
+              <button onclick="toggleDetails(this)">Details</button>
+              <div class="extra-details">
+                <p>Involves surgical procedures on abdominal organs, trauma, and soft tissues.</p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
 
     <!-- Courses Section -->
     <section id="courses" class="courses fade-in">
@@ -508,21 +625,22 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>Our Location</h3>
-                            <p>123 Medical Avenue, Bangalore, Karnataka - 560001</p>
+                            <p> Block-9 TP, Delhi</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone-alt"></i>
                         <div>
                             <h3>Call Us</h3>
-                            <p>+91 98765 43210</p>
+                            <p>+91 9211203953</p>
+                            <p>+91 9650796861 </p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>Email Us</h3>
-                            <p>info@mediconsult.com</p>
+                            <p>aatryeconsulting@gmail.com</p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -536,7 +654,7 @@
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/aatrye_counsting2025?igsh=Ynl1MGhsbjd3bTgz"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
@@ -639,6 +757,11 @@ function fadeInOnScroll() {
 }
 window.addEventListener('scroll', fadeInOnScroll);
 window.addEventListener('DOMContentLoaded', fadeInOnScroll);
+
+function toggleDetails(button) {
+      const details = button.nextElementSibling;
+      details.classList.toggle('show');
+    }
 </script>
 </body>
 </html>
