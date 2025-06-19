@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UPI Payment</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #002855;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+    .card {
+      background: #f0f4f8;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    .qr-img {
+      width: 200px;
+      height: 200px;
+      margin: 20px 0;
+      border: 2px solid #002855;
+      border-radius: 10px;
+    }
+    .upi-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #028a0f;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .upi-link:hover {
+      background-color: #026b0c;
+    }
+    .upi-id {
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Scan to Pay</h2>
+    <img src="qr-code.png" alt="Scan QR to Pay" class="qr-img">
+    <div class="upi-id">UPI ID: 9650796861@ptsbi</div>
+    <a class="upi-link" href="upi://pay?pa=9650796861@ptsbi&pn=Example%20User&am=500&cu=INR">
+      Pay via UPI App
+    </a>
+  </div>
+</body>
+</html>
