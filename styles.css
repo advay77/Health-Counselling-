@@ -458,40 +458,6 @@ header .container {
   transition: var(--transition);
 }
 
-/* Ticker Styles */
-.ticker-wrap {
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--primary-color);
-  padding: 10px 0;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  z-index: 999;
-}
-
-.ticker {
-  display: inline-block;
-  white-space: nowrap;
-  animation: ticker 30s linear infinite;
-}
-
-.ticker-item {
-  display: inline-block;
-  padding: 0 50px;
-  color: var(--white);
-  font-weight: 500;
-}
-
-@keyframes ticker {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 /* Hero Section */
 .hero {
   padding-top: 150px;
