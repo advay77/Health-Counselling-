@@ -1,0 +1,81 @@
+/* Responsive fix for Pay Now buttons in FAQ accordion */
+@media (max-width: 600px) {
+  .paynow-btn-faq {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 18px 0 10px 0;
+    font-size: 1.15rem;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 8px;
+    background: #028a0f;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+  }
+  .paynow-btn-faq:hover, .paynow-btn-faq:focus {
+    background: #026c0c;
+    color: #fff;
+    text-decoration: none;
+  }
+  .paynow-btn-blue {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 6px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff !important;
+    background: #0074D9;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+    vertical-align: middle;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .paynow-btn-blue:hover, .paynow-btn-blue:focus {
+    background: #005fa3;
+    color: #fff !important;
+    text-decoration: none;
+  }
+  @media (max-width: 600px) {
+    .faq .accordion-content > div[style*="overflow-x:auto"] {
+      overflow-x: auto;
+      width: 100%;
+    }
+    .faq .accordion-content table {
+      min-width: 540px;
+      width: 100%;
+      font-size: 0.97rem;
+    }
+    .faq .accordion-content td, .faq .accordion-content th {
+      word-break: break-word;
+      white-space: normal;
+      padding: 8px 6px !important;
+    }
+    .faq .accordion-content tr:last-child td[colspan="2"] > div {
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .paynow-btn-blue {
+      display: block;
+      width: 100%;
+      margin: 10px 0 6px 0;
+      font-size: 1.07rem;
+      padding: 14px 0;
+      text-align: center;
+    }
+    .faq .accordion-content strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+  }
+
+  .faq .accordion-content strong {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
