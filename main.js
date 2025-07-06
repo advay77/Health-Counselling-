@@ -79,16 +79,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const header = item.querySelector(".accordion-header")
 
     header.addEventListener("click", () => {
+      // Accordion click for desktop and mobile
+      handleAccordion(item);
+    });
+    // Also support touchstart for mobile
+    header.addEventListener("touchstart", (e) => {
+      // Prevents duplicate firing on some devices
+      e.preventDefault();
+      handleAccordion(item);
+    });
+    function handleAccordion(currentItem) {
       // Close all other accordion items
       accordionItems.forEach((otherItem) => {
-        if (otherItem !== item) {
-          otherItem.classList.remove("active")
+        if (otherItem !== currentItem) {
+          otherItem.classList.remove("active");
         }
-      })
-
+      });
       // Toggle current accordion item
-      item.classList.toggle("active")
-    })
+      currentItem.classList.toggle("active");
+    }
   })
 
   // Testimonial Slider
