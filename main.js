@@ -407,3 +407,57 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 })
+
+const slides = document.querySelectorAll('.slide');
+const dotsContainer = document.getElementById('dots');
+let currentIndex = 0;
+let startX = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+    dotsContainer.children[i].classList.toggle('active', i === index);
+  });
+}
+
+function createDots() {
+  slides.forEach((_, index) => {
+    const dot = document.createElement('span');
+    dot.classList.add('dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      currentIndex = index;
+      showSlide(currentIndex);
+    });
+    dotsContainer.appendChild(dot);
+  });
+}
+
+function autoSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
+
+function handleTouchStart(e) {
+  startX = e.touches[0].clientX;
+}
+
+function handleTouchEnd(e) {
+  const endX = e.changedTouches[0].clientX;
+  const diff = startX - endX;
+  if (diff > 50) {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  } else if (diff < -50) {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  }
+}
+
+createDots();
+showSlide(currentIndex);
+setInterval(autoSlide, 5000);
+
+const slider = document.getElementById('slider');
+slider.addEventListener('touchstart', handleTouchStart, false);
+slider.addEventListener('touchend', handleTouchEnd, false);
