@@ -1386,3 +1386,54 @@ footer ul li a:hover {
     margin: 0 10px;
   }
 }
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #000;
+}
+
+.slider-container {
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  touch-action: pan-y;
+}
+
+.slide {
+  min-width: 100%;
+  height: auto;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background-color: #000;
+}
